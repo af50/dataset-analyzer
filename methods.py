@@ -240,6 +240,19 @@ def data_types_analysis(df):
     return df
 
 
+def show_unique_values(df):
+    st.header("Unique Values for A Column")
+    column = st.selectbox("Select a column to view unique values:", df.columns)
+    st.subheader(f"Unique Values for Column: {column}")
+    unique_values = df[column].unique()
+    st.write(f"Number of unique values: {len(unique_values)}")
+    if len(unique_values) <= 20:
+        st.table(unique_values)
+    else: 
+        st.write("Too many unique values to display, showing the first 20:")
+        st.table(unique_values[:20])
+
+
 def column_names_analysis(df):
     """Displays column name information and allows renaming of columns."""
     st.header("Column Name Analysis")

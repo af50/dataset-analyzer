@@ -70,7 +70,11 @@ def describe_page():
 def data_types():
     global df
     df = data_types_analysis(df)
-    
+
+
+def show_uniques():
+    show_unique_values(df)
+
 
 def column_names():
     global df
@@ -141,6 +145,7 @@ tabs = {
     "Show Data": show_page,
     "Describe Data": describe_page,
     "Show Info" : info_page,
+    "Show Uniques" : show_uniques,
     "Data Types Analysis" : data_types,
     "Column Names Analysis" : column_names,
     "Missing Values Analysis" : missing_values,
