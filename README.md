@@ -27,7 +27,7 @@ This is an interactive data analysis application built with Streamlit. The app a
 To install the required dependencies, run:
 
 ```bash
-pip install -r requirements.txt
+streamlit run app.py
 ```
 
 To run the app use:
