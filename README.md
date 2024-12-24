@@ -27,11 +27,11 @@ This is an interactive data analysis application built with Streamlit. The app a
 To install the required dependencies, run:
 
 ```bash
-streamlit run app.py
+pip install -r requirements.txt
 ```
 
 To run the app use:
 
 ```bash
-pip install -r requirements.txt
+streamlit run app.py
 ```
